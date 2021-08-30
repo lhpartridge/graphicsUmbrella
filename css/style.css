@@ -1,0 +1,347 @@
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Saira', sans-serif;
+*/
+
+/*generic rules*/
+:root {
+    --bgColor: #fbfbfb;
+    --bannerColor: #a0c63f;
+    --iconColor: #8fb36f;
+    --buttonColor: #8eb53e;
+    --textColor: #202020;
+    --footerTextColor: #3a3a3a;
+    --footerIconColor: #bcbcbc;
+    --headerFont: 'Josefin Sans', sans-serif;
+    --subheaderFont: 'Saira', sans-serif;
+    --textFont: 'Open Sans', sans-serif;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?4pf1zc');
+    src:  url('../fonts/icomoon.eot?4pf1zc#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?4pf1zc') format('truetype'),
+      url('../fonts/icomoon.woff?4pf1zc') format('woff'),
+      url('../fonts/icomoon.svg?4pf1zc#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-circle-up:before {
+    content: "\ea41";
+  }
+  
+
+body {
+   background-image: url(images/graphics_umbrella_background.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: var(--bgColor);
+    font-family: var(--textFont);
+    transition: color 0.5s ease;
+}
+
+a:hover {
+    font-family: var(--textFont);
+    color: var(--buttonColor);
+}
+
+.sr-only {
+    display: none;
+}
+
+
+/*end generic rules*/
+
+#pullme, #pull {
+    text-transform: uppercase;
+    color: var(--bannerColor);
+}
+
+
+.main-header {
+    margin: 20px 0 20px 0;
+}
+
+.header-text {
+    font-family: var(--headerFont);
+    font-size: calc(10px + (24 - 10) * (100vw - 300px) / (800 - 300));
+    
+}
+
+#logo-image {
+    max-height: 75%;
+}
+
+.logo-column {
+    padding: 0;
+}
+
+.header-column {
+    margin: 0;
+    padding: 0;
+}
+
+#graphics {
+    font-size: calc(14px + (28 - 14) * (100vw - 300px) / (800 - 300));
+    text-transform: capitalize;
+    color: var(--banner);
+    font-weight: 400;
+    margin: 0;
+}
+
+#umbrella {
+    font-size: calc(14px + (28 - 14) * (100vw - 300px) / (800 - 300));
+    text-transform: capitalize;
+    color: var(--textColor);
+    font-weight: 400;
+    margin: 0;
+}
+
+#premium, #free {
+    font-size: calc(12px + (20 - 12) * (100vw - 300px) / (800 - 300));
+    margin: 0;
+    padding: 0;
+}
+
+#free {
+    margin-left: 5px;
+}
+
+.top-nav {
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+
+.top-nav-link {
+    color: var(--textColor);
+    font-size: calc(10px + (14 - 10) * (100vw - 300px) / (800 - 300));
+    padding: 0 8px;
+}
+
+a:hover {
+    text-decoration: none;
+
+    color: var(--buttonColor);
+}
+
+.banner-section {
+    background-color: var(--bannerColor);
+    padding: 0;
+    height: auto;
+    padding: 20px 0;
+}
+
+.carousel {
+    background-color: var(--bannerColor);
+}
+
+.carousel-row {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-text-column {
+
+}
+
+.carousel-text {
+    font-family: var(--subheaderFont);
+    font-size: calc(12px + (20 - 12) * (100vw - 300px) / (800 - 300));;
+    text-transform: uppercase;
+    color: var(--bgColor);
+    background-color: var(--bannerColor);
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+.subheader-text {
+    font-family: var(--subheaderFont);
+    font-size: calc(10px + (24 - 10) * (100vw - 300px) / (800 - 300));
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.subheader-text-elegantica, .subheader-text-portfolio, .subheader-text-advertisers {
+    color: var(--buttonColor);
+}
+
+.dashed-line {
+    margin-bottom: 5px;
+    border-bottom: 4px dashed #e5e4e2;
+}
+
+.dashed {
+    color: #e5e4e2;
+    text-align: center;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.icons {
+    margin: 0 auto;
+}
+
+.icon-subheader {
+    margin: 0 auto;
+    justify-self: start;
+}
+
+
+.icon-image {
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 20px solid white;
+}
+
+.icon-text {
+    font-family: var(--textFont);
+    text-transform: capitalize;
+}
+
+.section-2-subheader {
+    margin-top: 20px;
+}
+
+.card-title {
+    font-family: var(--subheaderFont);
+    color: var(--textColor);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card-title:hover {
+    color: var(--buttonColor);
+}
+
+.card-text {
+    color: var(--textColor);
+    font-size: calc(10px + (12 - 10) * (100vw - 300px) / (800 - 300));
+}
+
+.card-button {
+    background-color: var(--buttonColor);
+    color: var(--bgColor);
+    text-transform: uppercase;
+}
+
+
+
+#top {    
+    font-size: 30px;
+    background-color: var(--buttonColor);
+    border-radius: 50%;
+    color: white;
+}
+
+.advertiser-section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.footer-subheader {
+    font-size: calc(12px + (18 - 12) * (100vw - 300px) / (800 - 300)); 
+    font-family: var(--subheaderFont);
+    color: var(--textColor);
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.footer-subheader:hover {
+    color: var(--buttonColor);
+}
+
+.footer-nav {
+    padding: 8px 10px;
+}
+
+.footer-nav-link {
+    margin: 0;
+    padding: 0;
+}
+
+.socials-nav .footer-nav-link:hover {
+    color: var(--buttonColor);
+    background-color: var(--buttonColor);
+}
+
+.archives-link {
+    font-size: calc(12px + (16 - 12) * (100vw - 300px) / (800 - 300)); 
+    text-transform: capitalize;
+    color: var(--textColor);
+    border-bottom: 2px dotted var(--textColor);
+    line-height: 3;
+}
+
+.archives-last-child-link {
+    font-size: calc(12px + (16 - 12) * (100vw - 300px) / (800 - 300)); 
+    text-transform: capitalize;
+    color: var(--textColor);
+    border-bottom: none;
+    line-height: 3;
+}
+
+.footer-column-3 {
+    line-height: 3;
+}
+
+#subscribe {
+    font-family: var(--subheaderFont);
+    text-transform: uppercase;
+    color: var(--bgColor);
+    font-size: calc(10px + (12 - 10) * (100vw - 300px) / (800 - 300));
+    font-weight: 500;
+    background-color: var(--buttonColor);
+    margin-top: 20px;
+}
+
+.colophon {
+    background-color: var(--footerTextColor);
+}
+.colophon-nav-link, .colophon-text {
+    color: var(--bgColor);
+    font-family: var(--subheaderFont);
+    font-size: calc(10px + (12 - 10) * (100vw - 300px) / (800 - 300));
+    text-transform: uppercase;
+}

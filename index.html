@@ -1,0 +1,536 @@
+<!--Graphics Umbrella landing page
+    Header
+        the background is textured with a grainy paper appearance
+        pull me with bookmark icon
+        umbrella icon
+        logo w/text
+        top nav: home/news/products/features/contact
+    Banner
+        left arrow
+        image
+        text
+        right arrow
+    Content 1
+        header
+        4 round icons with links and text for each
+    Content 2
+        subheader recent from portfolio
+        4 cards, each with image, header, 2 links and text
+    Content 3
+        subheader our major advertisers
+        6 advertiser images with links
+        arrow for back to top
+    Footer 
+        2 sections
+            top-footer with 4 columns
+            bottom-footer nav with links, colophon 
+        4 columns
+            column 1
+                subheader little about us
+                text
+                subheader follow us
+                socials icons with links: facebook, twitter, rss, 
+            column 2
+                subheader archives
+                4 months with links
+            column 3
+                subheader contact us
+                email icon with email address to be opened in mail program
+                telephone icon with telephone number
+                mobile phone icon with +phone number
+            column 4
+                subheader sign to newsletter
+                name input
+                email input
+                button for submit with text subscribe
+        bottom-nav
+            home/portfolio/sitemap/contact
+            colophon
+
+colors
+background fbfbfb
+pull me bookmark 8fb36f
+banner a0c63f
+8eb53e
+
+fonts from Google 
+header: Josephin Slab
+subheader: Saira
+text: Open sans 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Saira:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/20dabea160/UntitledProject/style-svg.css">
+<script defer src="https://i.icomoon.io/public/temp/20dabea160/UntitledProject/svgxuse.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>GraphicsUmbrella</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <!--    Header
+        the background is textured with a grainy paper appearance
+        pull me with bookmark icon
+        umbrella icon
+        logo w/text
+        top nav: home/news/products/features/contact-->
+        <section class="container-fluid top-header">
+            <div class="row d-none d-md-flex fixed-top">
+                <div class="col-8"></div>
+                <div class="col-2 d-md-block">
+                    <p class="d-flex justify-content-end" id="pull">pull me</p>
+                </div>    
+                <div class="col-2 d-flex justify-content-start">   
+                    <a href="#link" id="pullme"><img src="css/images/bookmark_black_24dp.svg" alt=""></a>
+                </div> 
+               <!--end of column for top header-->
+            </div><!--end of row for top header-->
+        </section>
+        <section class="container-fluid main-header">
+            <!--
+            <div class="row justify-content-center justify-content-md-start">
+             -->    
+                <!--try using a nested column and row to keep the logo and the header together on all screen sizes
+                    make duplicate elements that display according to viewport-->
+                            
+                                <div class="row outer-header-row">
+                                  <div class="col">
+                                    <div class="row inner-header-row d-flex justify-content-center">
+                                        <div class="col-1 d-flex justify-content-md-end offset-0 logo-column">
+                                        <div class="logo">
+                                            <img class="img-fluid" id="logo-image" src="css/images/umbrella-logo-sm.png" alt="">
+                                        </div>
+                                        </div>
+                                        <div class="col-3 col-sm-4">
+                                            <div class="header-title d-flex d-inline justify-content-start">
+                                                <p class="header-text" id="graphics">graphics</p>
+                                                <p class="header-text" id="umbrella">umbrella</p>
+                                            </div>
+                                            <div class="w-100"></div>
+                                            <div class="header-title d-md-flex d-inline justify-content-start">    
+                                                <p class="header-text" id="premium">Premium style</p>
+                                                <p class="header-text" id="free">free graphics</p>
+                                            </div>
+                                        </div><!--end of inner column-->
+                                        <nav class="navbar top-nav col-md-6 col-lg-6 d-flex d-inline justify-content-center justify-content-md-end align-items-center">
+                                            <a href="#link" class="top-nav-link">home</a>
+                                            <a href="#link" class="top-nav-link">news</a>
+                                            <a href="#link" class="top-nav-link">products</a>
+                                            <a href="#link" class="top-nav-link">features</a>
+                                            <a href="#link" class="top-nav-link">contact</a></li>
+                                        </nav>
+                                    
+                                    </div><!--end of inner row-->
+
+                                  </div><!--end of outer column-->
+                                </div><!--end of outer row-->
+
+            </div><!--end of row for main header-->
+        </section><!--end of main header section-->
+    </header>
+    <main>
+        <!--Banner section
+        left carousel
+        image
+        text
+        right carousel-->
+        <section class="container-fluid banner-section">
+            <div class="row carousel-row">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="css/images/devices.png" class="img-fluid d-block w-100 shadow" alt="devices image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="css/images/devices.png" class="img-fluid d-block w-100 shadow" alt="devices image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="css/images/devices.png" class="img-fluid d-block w-100 shadow" alt="devices image">
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div><!--end of carousel-inner-->
+                    </div><!--end of carousel-->
+                    <div class="col-md-5 carousel-text-column">
+                        <p class="text carousel-text text-center ml-md-3 mr-md-3">add lovely captions to each slide and make your business stand out</p>
+                    </div>
+                </div><!--end of column for carousel-->
+
+            </div><!--end of row for carousel-->
+        </section>
+        <section class="container-fluid content-section-1">
+            <!--Content section 1
+        header
+        4 round icons with links and text for each-->
+            <div class="row" id="elegantica-row">
+                <div class="col subheader-column d-flex d-inline offset-md-1">
+                    <h1 class="subheader-text">welcome to&nbsp</h1><h1 class="subheader-text subheader-text-elegantica" id="elegantica">elegantica</h1><h1 class="subheader-text">&nbsp - a minimal business theme</h1>
+                </div>
+                <div class="col-10 offset-1 dashed-line"></div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-6 col-md-3 icons">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img class="img-fluid icon-image"src="css/images/recycle.jpg" alt="">
+                            <h2 class="subheader-text icon-subheader">amazing</h2>
+                            <p class="text icon-text">support</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-3 icons">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img class="img-fluid icon-image"src="css/images/landline_phone.jpg" alt="">
+                            <h2 class="subheader-text icon-subheader">24 hour </h2>
+                            <p class="text icon-text">availability</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 icons">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img class="img-fluid icon-image"src="css/images/settings.jpg" alt="">
+                            <h2 class="subheader-text icon-subheader">web</h2>
+                            <p class="text icon-text">design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 icons">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img class="img-fluid icon-image"src="css/images/mobile.jpg" alt="">
+                            <h2 class="subheader-text icon-subheader">mobile</h2>
+                            <p class="text icon-text">development</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of row for icons-->
+        </section><!--end of content section 1-->
+        <section class="container-fluid section content-section-2">
+            <!--    Content 2
+        subheader recent from portfolio
+        4 cards, each with image, header, 2 links and text-->
+            <div class="row">
+                <!-- 
+                <div class="col-md-7 subheader-column d-flex d-inline offset-1 dashed">
+
+                        <h2 class="subheader-text section-2-subheader">recent from &nbsp</h2><h2 class="subheader-text section-2-subheader subheader-text-portfolio" id="portfolio">portfolio</h2>
+                    </div>
+                -->
+                <!--
+                <div class="col-md-7 subheader-column d-flex d-inline offset-1 dashed">
+                    <h2 class="subheader-text section-2-subheader">
+                        <span>recent from &nbsp</span><span>portfolio</span>
+                    </h2>
+                </div>    
+-->
+
+
+    <div class="col subheader-column d-flex d-inline offset-1">
+        <h2 class="subheader-text section-2-subheader dashed">- -</h2><h2 class="subheader-text section-2-subheader">&nbsp recent from &nbsp</h2><h2 class="subheader-text section-2-subheader subheader-text-portfolio" id="portfolio">portfolio</h2><h2 class="subheader-text section-2-subheader dashed">&nbsp - - - - - - - - - -</h2><h2 class="subheader-text section-2-subheader dashed">&nbsp- - - - - - - - - - </h2>
+    </div>    
+   
+
+
+
+            </div><!--end of section 2 subheader-->
+            <div class="row cards">
+                <!--
+                <div class="col-md-8 d-flex offset-lg-1 justify-content-lg-between">-->
+                <div class="col d-md-flex justify-content-center justify-content-lg-around">
+    <!--beginning of cards-->
+                    <!--card 1-->
+                    <div class="card mb-3 card1" style="min-width: 280px; max-width: 540px;">
+                        <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="css/images/card_img_1.jpg" class="card-img" alt="business cards">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                            <a href="#cards" class="card-title-link"><h5 class="card-title subheader">business cards</h5></a>
+                            <div class="buttons">
+                                <button type="button" class="btn card-button">video</button>
+                                <button type="button" class="btn card-button">interview</button>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quae sequi culpa eius nobis! Amet eos eaque a? Inventore dignissimos ipsam at numquam nisi atque?.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!--card 2-->
+                    <!--<div class="col-md-1"></div>-->
+                    
+                    <div class="card mb-3 card2" style="min-width: 280px; max-width: 540px;">
+                        <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="css/images/card_img_2.jpg" class="card-img" alt="business cards">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a href="#minicards" class="card-title-link"><h5 class="card-title">moo minicards</h5></a>
+                            <div class="buttons">
+                                <button type="button" class="btn card-button">video</button>
+                                <button type="button" class="btn card-button">interview</button>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quae sequi culpa eius nobis! Amet eos eaque a? Inventore dignissimos ipsam at numquam nisi atque?.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div><!--end of card 2-->
+                </div><!--end of column for cards 1 and 2-->
+            </div>    
+            <!--<div class="w-100"></div>-->
+            
+            <div class="row cards">
+                <div class="col d-md-flex justify-content-center justify-content-lg-around">
+                    <!--card 3-->
+                    <div class="card mb-3 card3 d-xs-none" style="min-width: 280px; max-width: 540px;">
+                        <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="css/images/card_img_3.jpg" class="card-img" alt="business cards">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a href="#print" class="card-title-link"><h5 class="card-title">say it in print</h5></a>
+                            <div class="buttons">
+                                <button type="button" class="btn card-button">video</button>
+                                <button type="button" class="btn card-button">interview</button>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quae sequi culpa eius nobis! Amet eos eaque a? Inventore dignissimos ipsam at numquam nisi atque?.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-1"></div>-->
+                    
+                    <!--card 4-->
+                    <div class="card mb-3 card4" style="min-width: 280px; max-width: 540px;">
+                        <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="css/images/card_img_4.jpg" class="card-img" alt="business cards">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <a href="#graphics" class="card-title-link"><h5 class="card-title">graphics in print</h5></a>
+                            <div class="buttons">
+                                <button type="button" class="btn card-button">video</button>
+                                <button type="button" class="btn card-button">interview</button>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quae sequi culpa eius nobis! Amet eos eaque a? Inventore dignissimos ipsam at numquam nisi atque?.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!--end of cards-->
+                </div>
+            </div>
+
+        </section><!--end of cards section-->
+        <section class="section advertiser-section container-fluid">
+            <!--    Content 3
+        subheader our major advertisers
+        6 advertiser images with links
+        arrow for back to top-->
+            <div class="row">
+                <div class="col-md-7 subheader-column d-flex d-inline offset-1">
+                    <h2 class="subheader-text section-3-subheader">our major &nbsp</h2><h2 class="subheader-text section-3-subheader subheader-text-advertisers" id="advertisers">advertisers</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-sm-4 text-center">
+                    <img class="img-fluid advertiser-image" src="css/images/watermelocious.jpg" alt="@aterMelocious">
+                    <img class="img-fluid advertiser-image" src="css/images/plant_cloud.jpg" alt="plantcloud">
+                </div>    
+                <!--<div class="w-sm-100"></div>-->
+                
+                <div class="col-sm-4 text-center">    
+                    <img class="img-fluid advertiser-image" src="css/images/inspired_template.jpg" alt="Inspired Template">
+                    <img class="img-fluid advertiser-image" src="css/images/birdfly.jpg" alt="BirdFly">
+                </div>    
+                <!--<div class="w-sm-100"></div>-->
+                
+                <div class="col-sm-4 text-center">
+                    <img class="img-fluid advertiser-image" src="css/images/mansilhouette.jpg" alt="MANSILHOUETTE">
+                    <img class="img-fluid advertiser-image" src="css/images/solid_society.jpg" alt="SolidSociety">
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-sm-10 col-md-11"></div>
+                <div class="col-1 d-flex">
+                    <div class="top justify-content-end align-items-center">
+                        <a href="#header" class="top"><span class="icon-circle-up" id="top"></span></a>
+                        <!--
+                    <a href="#header"><img src="css/images/circle-up.svg" alt="" id="up-arrow"></a>
+                    -->
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container-fluid">
+            <!--    Footer 
+        2 sections
+            top-footer with 4 columns
+            bottom-footer nav with links, colophon 
+        4 columns
+            column 1
+                subheader little about us
+                text
+                subheader follow us
+                socials icons with links: facebook, twitter, rss, 
+            column 2
+                subheader archives
+                4 months with links
+            column 3
+                subheader contact us
+                email icon with email address to be opened in mail program
+                telephone icon with telephone number
+                mobile phone icon with +phone number
+            column 4
+                subheader sign to newsletter
+                name input
+                email input
+                button for submit with text subscribe
+        bottom-nav
+            home/portfolio/sitemap/contact
+            colophon-->
+            <div class="top-footer"> 
+                <div class="row footer-row">
+                    <!--column 1
+                        subheader little about us
+                        text
+                        subheader follow us
+                        socials icons with links: facebook, twitter, rss,-->
+                    <div class=" col-md-6 col-lg-3 footer-column">
+                        <a href="#about" class="footer-nav-link subheader-text footer-subheader"><h2 class="subheader-text footer-subheader">little about us</h2></a>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi non beatae eius quia repellendus amet voluptate illum perferendis suscipit delectus.</p>
+                        <a href="#follow" class="footer-nav-link subheader-text footer-subheader"><h2 class="subheader-text footer-subheader">follow us</h2></a>
+                        
+                        <nav class="navbar footer-nav socials-nav">
+                            <a href="#link" class="nav-item nav-link footer-nav-link"><img src="css/images/facebook.svg" width="25" height="25" alt=""></a>
+                            <a href="#link" class="nav-item nav-link footer-nav-link"><img src="css/images/twitter.svg" width="25" height="25" alt=""></a>
+                            <a href="#link" class="nav-item nav-link footer-nav-link"><img src="css/images/rss.svg" width="25" height="25" alt=""></a>
+                            <a href="#link" class="nav-item nav-link footer-nav-link"><img src="css/images/vimeo.svg" width="25" height="25" alt=""></a>
+                            <a href="#link" class="nav-item nav-link footer-nav-link"><img src="css/images/dribbble.svg" width="25" height="25" alt=""></a>
+                            <a href="#link" class="nav-item nav-link footer-nav-link"><img src="css/images/myspace.svg" width="25" height="25" alt=""></a>
+                        </nav>
+                    </div>
+                    <!--end of footer-column 1-->    
+
+                    <div class="col-md-6 col-lg-3 footer-column">
+                        <a href="#archives" class="footer-nav-link subheader-text footer-subheader"><h2 class="subheader-text footer-subheader">archives</h2></a>
+                        <nav class="navbar footer-nav archives-nav navbar-light justify-content-left">
+                            <div class="w-100">
+                                <a href="#link" class="nav-item nav-link footer-nav-link archives-link">may 2021</a>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="w-100">
+                                <a href="#link" class="nav-item nav-link footer-nav-link archives-link">june 2021</a>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="w-100">
+                                <a href="#link" class="nav-item nav-link footer-nav-link archives-link">july 2021</a>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="w-100">
+                                <a href="#link" class="nav-item nav-link footer-nav-link archives-last-child-link">august 2021</a>
+                            </div>
+                        </nav> 
+                    </div><!--end of footer-column 2--> 
+
+                    <div class="col-md-6 col-lg-3 footer-column footer-column-3">
+                        <a href="#contact" class="footer-nav-link subheader-text footer-subheader"><h2 class="subheader-text footer-subheader" id="contact">contact us</h2></a>
+                        <div class="row email">
+                            <div class="col-2">
+                                <a href="mailto:email@venedor.co" class="footer-nav-link button" id="email"><img class="email-img" src="css/images/email-icon.png" alt="email" style="max-width: 40px;"></a>
+                            </div>
+                            <div class="col-9">
+                                <p>info@premiumcodingcom</p>
+                            </div>
+                        </div>
+                        <div class="row telephone">
+                            <div class="col-2">
+                                <img src="css/images/phone_black_24dp.svg" alt="telephone" style="max-width: 40px;">
+                            </div>
+                            <div class="col-9">
+                                <p>800 555 1234</p>
+                            </div>
+                        </div>
+                        <div class="row mobile">
+                            <div class="col-2">
+                                <img src="css/images/phone_iphone_black_24dp.svg" alt="mobile phone" style="max-width: 40px;">
+                            </div>
+                            <div class="col-9">
+                                <p>448885555678</p>
+                            </div>
+                        </div>                     
+                    </div><!--end of footer-column 3-->
+
+                    <div class="col-md-6 col-lg-3 footer-column footer-column-4">
+                        <a href="#newsletter" class="footer-nav-link subheader-text footer-subheader"><h2 class="subheader-text footer-subheader">sign to newsletter</h2></a>
+                        
+                        <form>
+                            <div class="row form-group">
+                                <div class="col-11">
+                              <label for="name"></label>
+                              <input type="text" name="name" class="form-control mb-2" id="name" placeholder="Name" aria-describedby="nameHelp">
+                              <label for="email"></label>
+                              <input type="email" name="email" class="form-control mb-2" id="email" placeholder="Email" aria-describedby="emailHelp">
+                            </div>
+                              <div class="col-5"></div>
+                              <button type="submit" class="col-5 btn mb-2" id="subscribe">subscribe</button>
+                            </div>
+                        </form>    
+                    </div><!--end of footer-column 4-->
+                </div><!--end of footer-row-->
+                <div class="row colophon">
+
+                </div>
+            </div><!--end of top footer-->
+            <!--beginning of colophon row-->
+            <div class="row colophon">
+                <nav class="col-md-6 navbar colophon-nav d-flex align-items-center">
+                    <a href="#header" class="nav-item nav-link colophon-nav-link">home</a>
+                    <a href="#portfolio" class="nav-item nav-link colophon-nav-link">portfolio</a>
+                    <a href="#sitemap" class="nav-item nav-link colophon-nav-link">sitemap</a>
+                    <a href="#contact" class="nav-item nav-link colophon-nav-link">contact</a>
+                </nav>
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                    <p class="text colophon-text">2021 all rights reserved</p>
+                </div>
+            </div>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
+
+<!--problems to resolve:
+    create hovers for links
+    add email function
+    up-arrow on advertiser section
+    -->
